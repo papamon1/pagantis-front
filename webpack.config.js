@@ -53,9 +53,10 @@ module.exports = {
   },
   plugins: [
     new DotenvPlugin({
-      path: './.env',
+      sample: './.env',
       systemvars: true, // load all the predefined 'process.env' variables which will trump anything local per dotenv specs.
       silent: true,
+      safe: false
     })
   ]
 };
