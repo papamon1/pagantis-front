@@ -1,0 +1,60 @@
+.transfers-modal{
+
+    &__steps-content{
+        min-height: 200px;
+        padding: 16px;
+        margin-top: 16px;
+        text-align: center;
+        background-color: #fafafa;
+        border: 1px dashed #e9e9e9;
+        border-radius: 2px;
+    }
+
+    &__box{
+        
+        padding: 8px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        border: 3px solid;
+        
+        &--info{
+            border-color: cyan;
+            background-color: lightskyblue;
+        }
+        &--success{
+            border-color:chartreuse;
+            background-color: darkseagreen;
+        }
+        &--error{
+            border-color: crimson;
+            background-color: tomato;
+        }
+        
+    }
+
+    &__success-box{
+        background-color: lightskyblue;
+        padding: 8px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        border: 3px solid;
+        border-color: cyan;
+    }
+    &__success-box{
+        background-color: lightskyblue;
+        padding: 8px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        border: 3px solid;
+        border-color: cyan;
+    }   
+}
+
+// Overriding class for mobile 
+
+@media (max-width: 768px){
+    .ant-table-cell{
+        font-size: 8px;
+        padding: 6px 2px !important;
+    }
+} 

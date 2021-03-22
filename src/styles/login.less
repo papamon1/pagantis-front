@@ -1,0 +1,55 @@
+.login{
+
+    &-header-wrapper{
+        padding: 16px;
+        height: 100px;
+        color: wheat;
+        background-color: darkslategray;
+    }
+
+    &__logo{
+        max-width: 80px;
+    }
+
+    &__header{
+
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        max-width: fit-content;
+        font-family: 'Press Start 2P', cursive;
+        
+    }
+
+    &__form-container{
+        padding: 50px 0px 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title{
+        
+        font-size: 25px;
+
+        &--small{
+            text-align: end;
+            font-size: 12px;
+        }
+    }
+
+    &__form{
+        width: 30%;
+
+       
+    }
+    @media (max-width: 768px){
+        &__form{
+            width:60%
+        }
+    }
+    
+
+}
+
+
+
