@@ -1,7 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
 const DotenvPlugin = require('webpack-dotenv-plugin');
-DotenvPlugin.config({silent: true})
 
 
 require("@babel/polyfill");
@@ -55,7 +54,7 @@ module.exports = {
   plugins: [
     new DotenvPlugin({
       sample: './.env',
-      path: './.env'
+      safe:true
     })
   ]
 };
